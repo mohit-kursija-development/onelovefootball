@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Player Registration Section -->
+        <div class="registration">
+            <h2>Player Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="loginPlayer()">Login</button>
+            <div id="login-message"></div>
+        </div>
+
+        <!-- Voting Section -->
+        <div class="voting" id="voting-section" style="display: none;">
+            <h2>Vote for Player</h2>
+            <label for="vote-striker">Best Striker:</label>
+            <select id="vote-striker"></select>
+
+            <label for="vote-midfielder">Best Midfielder:</label>
+            <select id="vote-midfielder"></select>
+
+            <label for="vote-keeper">Best Keeper:</label>
+            <select id="vote-keeper"></select>
+
+            <label for="vote-worst">Spoiling the Environment:</label>
+            <select id="vote-worst"></select>
+
+            <button onclick="submitVote()">Submit Vote</button>
+            <div id="vote-message"></div>
+        </div>
+
+        <!-- Voting Stats Section -->
+        <div id="stats-section"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
